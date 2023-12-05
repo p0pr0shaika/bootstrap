@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="vewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img class="navbar-brand" src="img/BKR.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/burger.png">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Developers">Developers</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-dark btn-hz" data-bs-toggle="modal" data-bs-target="#contactModal">
+            SIGN UP
+          </button>
+        
+        
+          <!-- Модальное окно -->
+          <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"   aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <!-- Форма -->
+                          <form id="myForm" onsubmit="validateForm(event)">
+                              <div class="form-group">
+                                  <label for="name">Имя:</label>
+                                  <input type="text" class="form-control" id="name" name="name" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">Email:</label>
+                                  <input type="email" class="form-control" id="email" name="email" required>
+                              </div>
+                              <button type="submit" class="btn btn-xd btn-primary">Отправить</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Тост -->
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"   style="position: fixed; bottom: 0; left: 0;">
+              <div class="toast-body">
+                  <div>Валидация пройдена успешно</div>
+                  <img class="imgtost" src="img/tost.png">
+              </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>          
+    <container class="maincont">    
+          <div class="container">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-xl-6 col-md-12 col-sm-2 noimg">
+                <img src="img/img2.png" class="img5 d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-2">
+                <h2 class="h21">SINCE 1984</h2>
+                <h1 class="h11 display-6 fw-bold lh-1 mb-3">Happy Housing Every Day</h1>
+                <p class="p1 lead">Even the all-powerful Pointing has no control about the blind texts it is an almost.</p>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="container2 col-xxl flex-row-wrap">
+            <div class="row ">
+                <div class="col-xl-6 col-md-12">
+                    <img src="img/Group 5.png" alt="group5" class="img5">
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div>
+                        <h2 class="h21">ABOUT US</h2>
+                        <h1 class="h12">Special Moments of Development</h1>
+                    </div>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Last view back
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</p> 
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                On the skyline
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Pityful a rethoric
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                On her way she
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  <p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic.</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container4" id="Features">
+            <div class="text3">
+                <div class="row"><h2 class="h21">OUR FEATURES</h2></div>
+                <div class="row"><h1 class="h12">Wake up freshed Every morning</h1></div>
+            </div>
+            <div class="menu">
+                <div class="row">
+                    <div class="col-xl-8 col-md-12 background bigrow cen">
+                      <div class="text4">
+                          <h1 class="h13">Quantum Oasis</h1>
+                          <div class="row justify-content-between">
+                            <div class="col"><p class="p2">Flows by their place and supplies it with the necessary regelialia.</p></div>
+                            <div class="col-3"><p class="p3">9★</p></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12 cen">
+                      <img src="img/Bitmap (6).png" class="img6">
+                      <div class="text5">
+                        <div class="row justify-content-between">
+                          <div class="col"><h3 class="h31">Electric Idearium</h3></div>
+                          <div class="col-2"><p class="p3 pl">5★</p></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row r2 cen">
+                  <div class="col-xl-4 col-md-12 col-sm-6">
+                    <img src="img/Bitmap (7).png" class="img6">
+                      <div class="text5">
+                        <div class="row justify-content-between">
+                          <div class="col"><h3 class="h31">Spheres Deluxe</h3></div>
+                          <div class="col-2"><p class="p3 pl">3★</p></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-12 col-sm-6 cen">
+                    <img src="img/Bitmap (8).png" class="img6">
+                      <div class="text5">
+                        <div class="row justify-content-between">
+                          <div class="col"><h3 class="h31">Matrix of Ecology</h3></div>
+                          <div class="col-2"><p class="p3 pl">2★</p></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-12 col-sm-6 cen">
+                    <img src="img/Bitmap (9).png" class="img6">
+                      <div class="text5">
+                        <div class="row justify-content-between">
+                          <div class="col"><h3 class="h31">Oasis</h3></div>
+                          <div class="col-2"><p class="p3 pl">5★</p></div>
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
+                <button type="button" class="btn btn-outline-dark bt2">EXPLORE</button>
+            </div>
+        </div>
+
+      <div class="container5">
+        <div class="block1">
+          <div class="text2 t4">
+            <h2 class="h21 hh">OUR PROCESS</h2>
+            <h1 class="h12 hh">How We Work</h1>
+          </div>
+          <div class="container slider mt-5">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/dom1.jpg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/dom2.jpg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/dom3.jpg" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>      
+        </div>
+      </div>
+
+      <div class="container6 col-xxl flex-row-wrap" id="Developers">
+        <div class="row">
+          <div class="col-xl-5 col-md-12 cen">
+            <div class="text7">
+              <h2 class="h21">Our Developers</h2>
+              <h1 class="h12">Meet Our Professional Developers</h1>
+            </div>
+            <div class="container mt-5">
+              <ul class="nav nav-tabs" id="myTabs">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="tabOne" data-bs-toggle="tab" href="#paneOne" role="tab" aria-controls="paneOne" aria-selected="true">Electric Idearium</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="tabTwo" data-bs-toggle="tab" href="#paneTwo" role="tab" aria-controls="paneTwo" aria-selected="false">Jaquon Hart</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="tabThree" data-bs-toggle="tab" href="#paneThree" role="tab" aria-controls="paneThree" aria-selected="false">Oluchi Mazi</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabsContent">
+                <div class="tab-pane fade show active" id="paneOne" role="tabpanel" aria-labelledby="tabOne">
+                  <p>She packed her seven versalia, Even the all-powerful Pointing has no control about the blind texts it is an almost. Put her initial into the belt and made herself on the way.</p>
+                </div>
+                <div class="tab-pane fade" id="paneTwo" role="tabpanel" aria-labelledby="tabTwo">
+                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                </div>
+                <div class="tab-pane fade" id="paneThree" role="tabpanel" aria-labelledby="tabThree">
+                  <p>She packed her seven versalia, put her initial into the belt and made herself on the way. Even the all-powerful Pointing has no control about the blind texts it is an almost</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-12 gr11"><img src="img/Group 11.png"></div>
+        </div>
+      </div>
+
+      <div class="container7">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-sm- col-md-12"><img class="delimg" src="img/Group 12.png"></div>
+          <div class="col-xl-5 col-sm-8 display-flex cen">
+            <div class="text8">
+              <h2 class="h21">Get in Touch</h2>
+              <h1 class="h12">Contact With Us</h1>
+              <div class="row textcon">
+                <div class="col-2"><img src="img/Group 13.png"></div>
+                <div class="col-4">
+                  <p class="p7">01</p>
+                  <p class="p8">Address</p>
+                  <p class="p9">764 Richardson Rd.Bethpage, NY 11714</p>
+                </div>
+                <div class="col-2"><img src="img/Group 14.png"></div>
+                <div class="col-4">
+                  <p class="p7">02</p>
+                  <p class="p8">Phone</p>
+                  <p class="p10">+1 (234) 567-89-02</p>
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-dark bt2">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container8">
+        <div class="row footer">
+          <div class="col-2"><img src="img/BLD.png" class="img4"></div>
+          <div class="col-2">
+            <h3 class="h32">Assortment</h3>
+            <p class="p11">About</p>
+            <p class="p11">Product</p>
+            <p class="p11">Recipes</p>
+            <p class="p11">Contact</p>
+          </div>
+          <div class="col-2">
+            <h3 class="h32">SERVICE</h3>
+            <p class="p11">Catering</p>
+            <p class="p11">Corporate</p>
+          </div>
+          <div class="col-2">
+            <h3 class="h32">SOCIAL</h3>
+            <div class="row cont social">
+              <div class="col-xl-4 col-md-8 cen"><img src="img/Group 15.png"></div>
+              <div class="col-xl-4 col-md-8 cen"><img src="img/Group 16.png"></div>
+              <div class="col-xl-4 col-md-8"><img src="img/Group 17.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+  <!-- Bootstrap JS (5.x.x) и Popper.js (2.10.2) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script> 
+</body>
+</html>
